@@ -2,7 +2,7 @@ import { CERTIFICATE_LINKS, SOCIAL_LINKS } from '../lib/utils/constants';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-800">
+    <section id="about" className="py-8 bg-white dark:bg-gray-800">
       <div className="container-custom">
         <h2 className="section-title">About Me</h2>
         <div className="grid md:grid-cols-2 gap-10 items-start">

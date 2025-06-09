@@ -58,11 +58,11 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-gray-800">
+    <section id="projects" className="py-8 bg-white dark:bg-gray-800">
       <div className="container-custom">
         <h2 className="section-title">Projects</h2>
-        
-        <motion.div 
+
+        <motion.div
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
           initial="hidden"
@@ -77,19 +77,19 @@ export default function Projects() {
                     {project.title}
                   </div>
                 </div>
-                
+
                 <div className="p-6 flex-grow">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  
+
                   <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
-                  
+
                   <p className="text-gray-600 dark:text-gray-400 mb-4">{project.details}</p>
-                  
+
                   <div className="mb-6">
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, index) => (
-                        <span 
-                          key={index} 
+                        <span
+                          key={index}
                           className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-md text-sm"
                         >
                           {tech}
@@ -98,10 +98,10 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex gap-4 px-6 pb-6">
                   {project.sourceCode && (
-                    <a 
+                    <a
                       href={project.sourceCode}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -111,9 +111,9 @@ export default function Projects() {
                       Source Code
                     </a>
                   )}
-                  
+
                   {project.demoLink && (
-                    <a 
+                    <a
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"

@@ -87,7 +87,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-800">
+    <section id="contact" className="py-8 bg-white dark:bg-gray-800">
       <div className="container-custom">
         <h2 className="section-title">Get In Touch</h2>
 
@@ -140,7 +140,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="text-lg font-medium hover:text-primary-light dark:hover:text-primary-dark transition-colors"
                   >
-                    linkedin.com/in/neel-sanghvi-f07
+                    linkedin.com/neelsanghvi
                   </a>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="text-lg font-medium hover:text-primary-light dark:hover:text-primary-dark transition-colors"
                   >
-                    github.com/neel07sanghvi
+                    github.com/neelsanghvi
                   </a>
                 </div>
               </div>

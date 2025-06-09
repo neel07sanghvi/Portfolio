@@ -4,7 +4,7 @@ import { SOCIAL_LINKS, RESUME_LINK } from '../lib/utils/constants';
 
 export default function Hero() {
   return (
-    <section className="py-20 md:py-28 bg-gray-50 dark:bg-gray-900">
+    <section className="py-8 bg-gray-50 dark:bg-gray-900">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-10 md:mb-0">
@@ -23,7 +23,7 @@ export default function Hero() {
               <p className="text-gray-600 dark:text-gray-400 text-lg mb-8 max-w-lg">
                 Building modern web applications with a focus on clean code, performance, and user experience.
               </p>
-              
+
               <div className="flex flex-wrap gap-4">
                 <a href="/#contact" className="btn-primary">
                   Get in touch
@@ -32,27 +32,27 @@ export default function Hero() {
                   View Resume
                 </a>
               </div>
-              
+
               <div className="flex space-x-6 mt-8">
-                <a 
-                  href={SOCIAL_LINKS.GITHUB} 
-                  target="_blank" 
+                <a
+                  href={SOCIAL_LINKS.GITHUB}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
                   aria-label="GitHub"
                 >
                   <FaGithub className="w-6 h-6" />
                 </a>
-                <a 
-                  href={SOCIAL_LINKS.LINKEDIN} 
-                  target="_blank" 
+                <a
+                  href={SOCIAL_LINKS.LINKEDIN}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
                   aria-label="LinkedIn"
                 >
                   <FaLinkedin className="w-6 h-6" />
                 </a>
-                <a 
+                <a
                   href={SOCIAL_LINKS.EMAIL}
                   className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
                   aria-label="Email"
@@ -62,8 +62,8 @@ export default function Hero() {
               </div>
             </motion.div>
           </div>
-          
-          <motion.div 
+
+          <motion.div
             className="md:w-1/2 flex justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}

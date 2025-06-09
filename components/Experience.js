@@ -39,7 +39,7 @@ export default function Experience() {
   const [activeTab, setActiveTab] = useState(experiences[0].id);
 
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="experience" className="py-8 bg-gray-50 dark:bg-gray-900">
       <div className="container-custom">
         <h2 className="section-title">Professional Experience</h2>
 
