@@ -1,5 +1,6 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { PROJECT_LINKS } from '../lib/utils/constants';
 
 export default function Projects() {
   const projects = [
@@ -9,7 +10,7 @@ export default function Projects() {
       description: 'A full-stack event ticketing solution with secure payment processing and real-time seat selection, providing functionality comparable to BookMyShow.',
       details: 'Introduced a monorepo architecture using Turborepo with Docker containerization and integrated NextAuth for secure authentication with multiple sign-in options.',
       technologies: ['Turborepo', 'NextJs', 'Typescript', 'Tailwind CSS', 'NestJs', 'Prisma', 'PostgreSQL', 'Docker'],
-      sourceCode: 'https://github.com/neelsanghvi',
+      sourceCode: PROJECT_LINKS.EVENT_MANAGEMENT,
       demoLink: null,
       image: '/images/project-event.jpg'
     },
@@ -19,9 +20,19 @@ export default function Projects() {
       description: 'A comprehensive music bot with Play, Pause, Resume, Skip, and Stop commands for seamless music playbook control.',
       details: 'Utilized YouTube\'s algorithm and Puppeteer framework within NodeJs to create an automated recommendation system for enhanced user experience, resulting in a 10x user growth.',
       technologies: ['NodeJs', 'Puppeteer'],
-      sourceCode: 'https://github.com/neelsanghvi',
+      sourceCode: PROJECT_LINKS.SAREGAMA,
       demoLink: null,
       image: '/images/project-music.jpg'
+    },
+    {
+      id: 3,
+      title: 'Covid Help',
+      description: 'Led a web application to assist Covid-19 affected individuals with posting, commenting, and location-based filtering to connect users with support resources.',
+      details: 'Created an intuitive interface providing seamless access to emergency contact information for government hospitals across India, supporting hundreds of users.',
+      technologies: ['ReactJs', 'NodeJs', 'ExpressJs', 'SCSS', 'MongoDB'],
+      sourceCode: PROJECT_LINKS.COVID_HELP,
+      demoLink: null,
+      image: '/images/project-covid.jpg'
     }
   ];
 
@@ -52,7 +63,7 @@ export default function Projects() {
         <h2 className="section-title">Projects</h2>
         
         <motion.div 
-          className="grid md:grid-cols-2 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

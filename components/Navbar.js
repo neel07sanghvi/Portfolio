@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import ThemeToggle from './ThemeToggle';
+import { RESUME_LINK } from '../lib/utils/constants';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ export default function Navbar() {
           </ul>
           <ThemeToggle />
           <a 
-            href="/resume.pdf" 
+            href={RESUME_LINK} 
             target="_blank"
             className="btn-primary"
           >
@@ -80,7 +81,7 @@ export default function Navbar() {
               ))}
               <li>
                 <a 
-                  href="/resume.pdf" 
+                  href={RESUME_LINK} 
                   target="_blank"
                   className="btn-primary inline-block mt-2"
                 >

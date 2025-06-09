@@ -30,7 +30,8 @@ export default function Experience() {
       technologies: 'NextJs, Tailwind CSS',
       responsibilities: [
         'Designed a responsive landing page using NextJs and implemented secure user authentication with NextAuth, streamlining access management and enhancing user experience.',
-        'Created an efficient cart system with React Context API to manage wishlist data and optimized website performance, achieving a 40% improvement in Search Engine Optimization (SEO).'
+        'Created an efficient cart system utilizing React Context API to manage user wishlist data, enhancing the shopping experience and product selection functionality.',
+        'Optimized website performance and structure, achieving a 40% improvement in Search Engine Optimization (SEO) and visibility metrics.',
       ]
     }
   ];

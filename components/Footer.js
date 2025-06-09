@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { SOCIAL_LINKS, RESUME_LINK } from '../lib/utils/constants';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,7 +15,7 @@ export default function Footer() {
 
           <div className="flex space-x-6 mb-4 md:mb-0">
             <a 
-              href="https://linkedin.com/in/neelsanghvi" 
+              href={SOCIAL_LINKS.LINKEDIN} 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
@@ -23,7 +24,7 @@ export default function Footer() {
               <FaLinkedin className="w-6 h-6" />
             </a>
             <a 
-              href="https://github.com/neelsanghvi" 
+              href={SOCIAL_LINKS.GITHUB} 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
@@ -32,7 +33,7 @@ export default function Footer() {
               <FaGithub className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:neel07sanghvi@gmail.com" 
+              href={SOCIAL_LINKS.EMAIL} 
               className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
               aria-label="Email"
             >

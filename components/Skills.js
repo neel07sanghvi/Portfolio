@@ -1,3 +1,5 @@
+import { CERTIFICATE_LINKS } from '../lib/utils/constants';
+
 export default function Skills() {
   const skillCategories = [
     {
@@ -61,7 +63,7 @@ export default function Skills() {
               <ul className="space-y-2">
                 <li>
                   <a 
-                    href="#" 
+                    href={CERTIFICATE_LINKS.HACKERRANK_FRONTEND} 
                     className="text-primary-light dark:text-primary-dark hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -71,7 +73,7 @@ export default function Skills() {
                 </li>
                 <li>
                   <a 
-                    href="#" 
+                    href={CERTIFICATE_LINKS.HACKERRANK_PROBLEM_SOLVING} 
                     className="text-primary-light dark:text-primary-dark hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -87,7 +89,7 @@ export default function Skills() {
               <ul className="space-y-2">
                 <li>
                   <a 
-                    href="#" 
+                    href={CERTIFICATE_LINKS.QWIKLABS_DEVOPS} 
                     className="text-primary-light dark:text-primary-dark hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -97,7 +99,7 @@ export default function Skills() {
                 </li>
                 <li>
                   <a 
-                    href="#" 
+                    href={CERTIFICATE_LINKS.QWIKLABS_CLOUD} 
                     className="text-primary-light dark:text-primary-dark hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
